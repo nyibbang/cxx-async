@@ -12,3 +12,6 @@ In the implementations, multiple clients are created and are executed in paralle
 their commands at different intervals.
 
 The implementation must be mono-threaded.
+
+- [Command types and functions](src/computer.hpp)
+- [Boost.Asio implementation](src/main_asio.cpp)
