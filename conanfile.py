@@ -2,7 +2,7 @@ from conan import ConanFile, tools
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
-class cxx_asyncRecipe(ConanFile):
+class CxxAsyncRecipe(ConanFile):
     name = "cxx-async"
     version = "0.1"
     package_type = "application"
@@ -34,12 +34,3 @@ class cxx_asyncRecipe(ConanFile):
         deps.generate()
         tc = CMakeToolchain(self)
         tc.generate()
-
-    def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
-
-    def package(self):
-        cmake = CMake(self)
-        cmake.install()
