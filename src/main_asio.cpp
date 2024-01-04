@@ -4,11 +4,7 @@
 #include <chrono>
 #include <system_error>
 #include <boost/predef.h>
-#if defined(BOOST_COMP_CLANG)
-#  include <experimental/coroutine>
-#else
-#  include <coroutine>
-#endif
+#include <coroutine>
 #include <sstream>
 #include <unistd.h>
 #include <boost/asio.hpp>
