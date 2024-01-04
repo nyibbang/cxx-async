@@ -15,3 +15,4 @@ The implementation must be mono-threaded.
 
 - [Command types and functions](src/computer.hpp)
 - [Boost.Asio implementation](src/main_asio.cpp)
+- [Boost.Cobalt implementation](src/main_cobalt.cpp)
