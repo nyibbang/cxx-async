@@ -1,11 +1,7 @@
 #include <boost/asio/buffer.hpp>
-#include <deque>
 #include <iostream>
 #include <chrono>
-#include <system_error>
 #include <boost/predef.h>
-#include <coroutine>
-#include <sstream>
 #include <unistd.h>
 #include <boost/asio.hpp>
 #include <boost/asio/experimental/awaitable_operators.hpp>
@@ -17,9 +13,6 @@
 using boost::asio::awaitable;
 using boost::asio::co_spawn;
 using boost::asio::detached;
-using boost::asio::deferred;
-using boost::asio::use_awaitable;
-using boost::asio::as_tuple;
 using boost::asio::io_context;
 using boost::asio::signal_set;
 using boost::asio::buffer;
